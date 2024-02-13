@@ -285,6 +285,9 @@ body {
     min-height:100%;
 
   }
+  .modalmask:target .movedown {
+    margin: 15% auto;
+}
   .shadow {
     position: absolute;
     width: 330px;
@@ -321,6 +324,9 @@ body {
     min-height:100%;
 
   }
+  .modalmask:target .movedown {
+    margin: 15% auto;
+}
   .shadow {
     position: absolute;
     width: 330px;
@@ -343,7 +349,9 @@ body {
   }
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-  
+  .modalmask:target .movedown {
+    margin: 15% auto;
+}
   
   .shadow {
     position: absolute;
@@ -367,6 +375,10 @@ body {
   }
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+  .modalmask:target .movedown {
+    margin: 5% auto;
+}
   .shadow {
     position: absolute;
     width: 330px;
@@ -406,7 +418,11 @@ body {
     height: 500px;
     overflow-y: auto;
     overflow-x: auto;
-  }}
+  }
+  .modalmask:target .movedown {
+    margin: 5% auto;
+}
+}
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 /*Formato de la ventana*/
 .shadow {
@@ -419,6 +435,9 @@ body {
   left: 790px;
   animation: scale 3s linear infinite;
   z-index: -1;
+}
+.modalmask:target .movedown {
+  margin: 5% auto;
 }
 .modalbox{
   width: 700px;

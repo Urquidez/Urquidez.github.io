@@ -277,15 +277,28 @@ body {
     display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fae1dd;
+  /* background-color: #fae1dd; */
 }
 
 #wrapping-div {
     height:auto!important;
     min-height:100%;
-}
+
+  }
+  .shadow {
+    position: absolute;
+    width: 330px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 250px;
+    left: 40px;
+    animation: scale 3s linear infinite;
+    z-index: -1;
+  }
+
   .modalbox{
-    width: 400px;
+    width: 350px;
     position: relative;
     padding: 5px 20px 13px 20px;
     height: 500px;
@@ -295,17 +308,29 @@ body {
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
   html,
-  body {
-      height:100%;
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fae1dd;
+body {
+    height:100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fae1dd; */
+}
+
+#wrapping-div {
+    height:auto!important;
+    min-height:100%;
+
   }
-  
-  #wrapping-div {
-      height:auto!important;
-      min-height:100%;
+  .shadow {
+    position: absolute;
+    width: 330px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 250px;
+    left: 40px;
+    animation: scale 3s linear infinite;
+    z-index: -1;
   }
 
   .modalbox{
@@ -318,6 +343,33 @@ body {
   }
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  
+  html,
+body {
+    height:100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fae1dd; */
+}
+
+#wrapping-div {
+    height:auto!important;
+    min-height:100%;
+
+  }
+  .shadow {
+    position: absolute;
+    width: 330px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 250px;
+    left: 40px;
+    animation: scale 3s linear infinite;
+    z-index: -1;
+  }
+
   .modalbox{
     width: 500px;
     position: relative;

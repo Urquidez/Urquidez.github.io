@@ -291,7 +291,7 @@ body {
     height: 25px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.3);
-    bottom: 250px;
+    bottom: 200px;
     left: 40px;
     animation: scale 3s linear infinite;
     z-index: -1;
@@ -367,6 +367,17 @@ body {
   }
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .shadow {
+    position: absolute;
+    width: 330px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 200px;
+    left: 600px;
+    animation: scale 3s linear infinite;
+    z-index: -1;
+  }
   .modalbox{
     width: 600px;
     position: relative;
@@ -376,6 +387,18 @@ body {
     overflow-x: auto;
   } }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  /*Formato de la ventana*/
+.shadow {
+  position: absolute;
+  width: 330px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 250px;
+  left: 790px;
+  animation: scale 3s linear infinite;
+  z-index: -1;
+}
   .modalbox{
     width: 600px;
     position: relative;

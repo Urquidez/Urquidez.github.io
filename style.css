@@ -293,6 +293,38 @@ img{
     overflow-x: auto;
   }
 }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .modalbox{
+    width: 500px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+  } }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  .modalbox{
+    width: 500px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+/*Formato de la ventana*/
+.modalbox{
+  width: 700px;
+  position: relative;
+  padding: 5px 20px 13px 20px;
+  /* background: #fff; */
+  border-radius:3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+
+  height: 600px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+}

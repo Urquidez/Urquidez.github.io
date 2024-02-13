@@ -264,16 +264,50 @@ img{
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
 
+  /* Set the colour and the position of the background and the elements */
+/* body {
+  
+  height: 800px;
+  
+  width: 800px;
+} */
+html,
+body {
+    height:100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fae1dd;
+}
+
+#wrapping-div {
+    height:auto!important;
+    min-height:100%;
+}
   .modalbox{
     width: 400px;
     position: relative;
     padding: 5px 20px 13px 20px;
-    height: 300px;
+    height: 500px;
     overflow-y: auto;
     overflow-x: auto;
   }
 }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+  html,
+  body {
+      height:100%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fae1dd;
+  }
+  
+  #wrapping-div {
+      height:auto!important;
+      min-height:100%;
+  }
+
   .modalbox{
     width: 400px;
     position: relative;

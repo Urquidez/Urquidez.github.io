@@ -197,10 +197,12 @@ body {
     overflow-x: auto;
 
   /*PROSPECTO COLORES*/
-  background-color: #91806c;
-  color: white;
+  background-color: #eae2b7;
+  color: #003049;
    
 }
+
+
 
 #p-images{
   text-align: -webkit-center;
@@ -264,13 +266,16 @@ img{
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
 
-  /* Set the colour and the position of the background and the elements */
-/* body {
-  
-  height: 800px;
-  
-  width: 800px;
-} */
+  .modalbox::before{
+    content: "";
+      position: absolute;
+      border: 3px solid #003049;
+      border-style: dotted;
+      width: 96%;
+      height: 228%;
+      left: 12px;
+      top: 12px;
+  }
 html,
 body {
     height:100%;
@@ -309,6 +314,7 @@ body {
     overflow-x: auto;
   }
 }
+
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
   html,
 body {
@@ -348,6 +354,7 @@ body {
     overflow-x: auto;
   }
 }
+
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
   .modalmask:target .movedown {
     margin: 15% auto;
@@ -373,7 +380,18 @@ body {
     overflow-y: auto;
     overflow-x: auto;
   }
+  .modalbox::before{
+    content: "";
+      position: absolute;
+      border: 3px solid #003049;
+      border-style: dotted;
+      width: 96%;
+      height: 210%;
+      left: 12px;
+      top: 12px;
+  }
 }
+
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
   
   .modalmask:target .movedown {
@@ -397,7 +415,19 @@ body {
     height: 500px;
     overflow-y: auto;
     overflow-x: auto;
-  } }
+  } 
+  .modalbox::before{
+    content: "";
+      position: absolute;
+      border: 3px solid #003049;
+      border-style: dotted;
+      width: 96%;
+      height: 205%;
+      left: 12px;
+      top: 12px;
+  }
+}
+
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
   /*Formato de la ventana*/
 .shadow {
@@ -422,7 +452,18 @@ body {
   .modalmask:target .movedown {
     margin: 5% auto;
 }
+.modalbox::before{
+  content: "";
+    position: absolute;
+    border: 3px solid #003049;
+    border-style: dotted;
+    width: 96%;
+    height: 205%;
+    left: 12px;
+    top: 12px;
 }
+}
+
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 /*Formato de la ventana*/
 .shadow {
@@ -452,5 +493,15 @@ body {
   height: 600px;
     overflow-y: auto;
     overflow-x: auto;
+}
+.modalbox::before{
+  content: "";
+    position: absolute;
+    border: 3px solid #003049;
+    border-style: dotted;
+    width: 96%;
+    height: 175%;
+    left: 12px;
+    top: 12px;
 }
 }
